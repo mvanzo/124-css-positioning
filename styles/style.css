@@ -1,0 +1,64 @@
+/* css variables : means psuedo selector */
+:root {
+  /* -- to deifne a css variable */
+  --primaray-color: hotpink;
+  --secondary-color: chartreuse;
+  --text-color: black;
+}
+
+/* this selects all elements */
+* {
+  /* css function var finds the varaible for us */
+  background-color: var(--primaray-color);
+}
+
+.margin {
+  /* long, verbose way */
+  /* margin-top: 4rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
+  margin-left: 8rem; */
+  /* margin: top right bottom left */
+  /* TRBL: if you dont remember */
+  /* margin: 4rem 8rem 4rem 8rem; */
+  /* top-bottom - side-side */
+  margin: 4rem 8rem;
+  /* margin: top-bottom: 0 side-side: auto */
+  /* margin: 0 auto; */
+}
+
+/* edge of element/content */
+.border { 
+  /* border: size type color; */
+  border: .5rem solid var(--secondary-color);
+}
+
+/* space between content/element and border */
+.padding { 
+  /* all around padding */
+  padding: 2rem;
+  /* padding-left: */
+  /* padding: top right bottom left */
+}
+
+/* content */
+.content {
+  /* background-color:#00FFFF; */
+  /* rgba(r 0-255, g 0-255, b 0-255, a-0-1.) */
+  background-color: rgba(33, 229, 232, 0.449);
+}
+
+/* 
+CSS POSITIONING
+*/
+
+/* display examples */
+.inline {
+  /* overide the defualt display */
+  display: inline;
+}
+
+.hidden {
+  /* you can use the display to hide things */
+  display: none;
+}
